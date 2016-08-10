@@ -79,6 +79,17 @@ defineOption("commandParamPrompt", ParamPrompt)
 // `aria-label` attribute with this value.
 defineOption("label", null)
 
+// :: number #path=scrollThreshold #kind=option
+// The minimum distance to keep between the position of document
+// changes and the editor bounding rectangle before scrolling the view.
+// Defaults to 0.
+defineOption("scrollThreshold", 0)
+
+// :: number #path=scrollMargin #kind=option
+// Determines how far to scroll when the scroll threshold is
+// surpassed. Defaults to 5.
+defineOption("scrollMargin", 5)
+
 // :: ?(string) → string #path=translate #kind=option
 // Optional function to translate strings such as menu labels and prompts.
 // When set, should be a function that takes a string as argument and returns
